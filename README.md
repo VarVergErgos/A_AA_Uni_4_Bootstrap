@@ -1,4 +1,4 @@
-# We want to use angular and Bootstrap with Json-Server with HTTP-Client
+# We want to use angular and Bootstrap with Json-Server
   I'am a Beginner and wanted to learn Angular. I get the information for this repository on youtube
   Thanks Learning-Points for this nice tutorial to learn Angular Json and Bootstrap
   youtube: Learning Points
