@@ -1,7 +1,7 @@
 # We want to use angular and Bootstrap with Json-Server with HTTP-Client
   For the Beginners we get the information to to this on youtube
   Thanks for this nice tutorial to learn how we can do it in Angular
-  youtbe: Learning Points
+  youtube: Learning Points
   
 ##  https://www.youtube.com/watch?v=p01Ydl62ObE&list=PLQcBFrxTul9IQFF7fJz7jgdRYJz1OCbll
 
