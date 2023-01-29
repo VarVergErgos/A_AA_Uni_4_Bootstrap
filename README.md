@@ -1,3 +1,15 @@
+# We want to use angular and Bootstrap with Json-Server
+  I'am a Beginner and wanted to learn Angular. I get the information for this repository on youtube
+  Thanks Learning-Points for this nice tutorial to learn Angular Json and Bootstrap
+  youtube: Learning Points
+  
+##  https://www.youtube.com/watch?v=p01Ydl62ObE&list=PLQcBFrxTul9IQFF7fJz7jgdRYJz1OCbll
+
+### Create the new project
+1.) D:/ng new A_AA_Uni_4_Bootstrap
+
+
+
 # AAAUni4Bootstrap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
