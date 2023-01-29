@@ -1,0 +1,29 @@
+1.) Create new Project
+
+D:\>g
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? CSS
+CREATE A_AA_Uni_4_Bootstrap/angular.json (2770 bytes)
+CREATE A_AA_Uni_4_Bootstrap/package.json (1051 bytes)
+CREATE A_AA_Uni_4_Bootstrap/README.md (1070 bytes)
+CREATE A_AA_Uni_4_Bootstrap/tsconfig.json (901 bytes)
+CREATE A_AA_Uni_4_Bootstrap/.editorconfig (274 bytes)
+CREATE A_AA_Uni_4_Bootstrap/.gitignore (548 bytes)
+CREATE A_AA_Uni_4_Bootstrap/tsconfig.app.json (263 bytes)
+CREATE A_AA_Uni_4_Bootstrap/tsconfig.spec.json (273 bytes)
+CREATE A_AA_Uni_4_Bootstrap/.vscode/extensions.json (130 bytes)
+CREATE A_AA_Uni_4_Bootstrap/.vscode/launch.json (474 bytes)
+CREATE A_AA_Uni_4_Bootstrap/.vscode/tasks.json (938 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/favicon.ico (948 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/index.html (302 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/main.ts (214 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/styles.css (80 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/assets/.gitkeep (0 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/app/app-routing.module.ts (245 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/app/app.module.ts (393 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/app/app.component.html (23115 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/app/app.component.spec.ts (1115 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/app/app.component.ts (224 bytes)
+CREATE A_AA_Uni_4_Bootstrap/src/app/app.component.css (0 bytes)
+√ Packages installed successfully.
+    Directory is already under version control. Skipping initialization of git.
