@@ -75,6 +75,10 @@ Build at: 2023-01-29T09:22:57.708Z - Hash: 98cc2dba1c6903c0 - Time: 243ms
 √ Compiled successfully.
 
 
+## create the routing
+
+## Install bootstrap
+   ng add @ng-bootstrap/ng-bootstrap
 # 
 #
 
