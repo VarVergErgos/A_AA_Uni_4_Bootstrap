@@ -1,7 +1,7 @@
 {
   "students": [
     { "id": 1, "name": "student 1", "email": "student1@email.com" },
-    { "id": 2, "name": "student 2", "email": "student2@email.com" }
+    { "id": 2, "name": "student 2", "email": "student2@email.com" },
     { "id": 3, "name": "student 3", "email": "student3@email.com" },
     { "id": 4, "name": "student 4", "email": "student4@email.com" },
     { "id": 5, "name": "student 5", "email": "student5@email.com" },
