@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'edit', component: EditStudentComponent },
   { path: 'login', component: LoginStudentComponent },
   { path: 'register', component: RegistrationComponent },
+   {path: '**',  redirectTo: '/',
+  },
 ];
 
 @NgModule({
