@@ -5,8 +5,45 @@
   
 ##  https://www.youtube.com/watch?v=p01Ydl62ObE&list=PLQcBFrxTul9IQFF7fJz7jgdRYJz1OCbll
 
-### Create the new project
+## npm install -g @angular/cli
+
+## Create the new project
+
+
 1.) D:/ng new A_AA_Uni_4_Bootstrap
+    routing=yes css=yes
+    
+## npm install -g json-server
+create a folder database. In this create a db.json
+see also in 
+
+## https://www.npmjs.com/package/json-server
+
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+go into the database folder and start the call
+json-server --watch db.json
+
+Now if you go to http://localhost:3000/posts/1, you'll get
+{ "id": 1, "title": "json-server", "author": "typicode" }
+
+## Create the components for a student g= generate c= component components = folder 
+
+we don't create a delete component because we want do it per action button in the list-student
+
+### ng g c components/add-student
+### ng g c components/edit-student
+### ng g c components/list-student
+### ng g c components/login-student
+### ng g c components/registration
 
 
 
