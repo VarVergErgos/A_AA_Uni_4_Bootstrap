@@ -30,6 +30,16 @@ json-server --watch db.json
 Now if you go to http://localhost:3000/posts/1, you'll get
 { "id": 1, "title": "json-server", "author": "typicode" }
 
+## Create the components for a student g= generate c= component components = folder 
+
+we don't create a delete component because we want do it per action button in the list-student
+
+# ng g c components/add-student
+# ng g c components/edit-student
+# ng g c components/list-student
+# ng g c components/login-student
+# ng g c components/registration
+
 
 
 # AAAUni4Bootstrap
