@@ -27,6 +27,8 @@ create a folder database. In this create a db.json
 go into the database folder and start the call
 json-server --watch db.json
 
+Now if you go to http://localhost:3000/posts/1, you'll get
+{ "id": 1, "title": "json-server", "author": "typicode" }
 
 
 
