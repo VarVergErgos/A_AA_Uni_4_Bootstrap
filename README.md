@@ -47,7 +47,33 @@ we don't create a delete component because we want do it per action button in th
 
 now you can start ng serve to get the localhost:4200 to see the page you have created
 
-### ng serve
+## ng serve
+D:\A_AA_Uni_4_Bootstrap>ng serve
+√ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   2.04 MB |
+polyfills.js          | polyfills     | 314.29 kB |
+styles.css, styles.js | styles        | 209.42 kB |
+main.js               | main          |  56.98 kB |
+runtime.js            | runtime       |   6.54 kB |
+
+                      | Initial Total |   2.61 MB
+
+Build at: 2023-01-29T09:22:57.349Z - Hash: 98cc2dba1c6903c0 - Time: 20869ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+√ Compiled successfully.
+√ Browser application bundle generation complete.
+
+5 unchanged chunks
+
+Build at: 2023-01-29T09:22:57.708Z - Hash: 98cc2dba1c6903c0 - Time: 243ms
+
+√ Compiled successfully.
+
 
 # 
 #
