@@ -5,13 +5,13 @@
   
 ##  https://www.youtube.com/watch?v=p01Ydl62ObE&list=PLQcBFrxTul9IQFF7fJz7jgdRYJz1OCbll
 
-#npm install -g @angular/cli
+# npm install -g @angular/cli
 
-### Create the new project
+## Create the new project
 
 
 1.) D:/ng new A_AA_Uni_4_Bootstrap
-#npm install -g json-server
+# npm install -g json-server
 create a folder database. In this create a db.json
 
 {
