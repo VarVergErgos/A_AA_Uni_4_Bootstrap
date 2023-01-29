@@ -34,11 +34,11 @@ Now if you go to http://localhost:3000/posts/1, you'll get
 
 we don't create a delete component because we want do it per action button in the list-student
 
-# ng g c components/add-student
-# ng g c components/edit-student
-# ng g c components/list-student
-# ng g c components/login-student
-# ng g c components/registration
+### ng g c components/add-student
+### ng g c components/edit-student
+### ng g c components/list-student
+### ng g c components/login-student
+### ng g c components/registration
 
 
 
