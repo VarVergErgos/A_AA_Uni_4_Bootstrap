@@ -11,6 +11,8 @@
 
 
 1.) D:/ng new A_AA_Uni_4_Bootstrap
+    routing=yes css=yes
+    
 ## npm install -g json-server
 create a folder database. In this create a db.json
 
