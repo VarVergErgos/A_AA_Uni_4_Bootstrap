@@ -29,13 +29,15 @@ app-routing.module.ts</font>
 <a name="l12"><span class="ln">12   </span></a>  { path: <span class="s2">'edit'</span>, component: EditStudentComponent },
 <a name="l13"><span class="ln">13   </span></a>  { path: <span class="s2">'login'</span>, component: LoginStudentComponent },
 <a name="l14"><span class="ln">14   </span></a>  { path: <span class="s2">'register'</span>, component: RegistrationComponent },
-<a name="l15"><span class="ln">15   </span></a>];
-<a name="l16"><span class="ln">16   </span></a>
-<a name="l17"><span class="ln">17   </span></a>@NgModule({
-<a name="l18"><span class="ln">18   </span></a>  imports: [RouterModule.forRoot(routes)],
-<a name="l19"><span class="ln">19   </span></a>  exports: [RouterModule]
-<a name="l20"><span class="ln">20   </span></a>})
-<a name="l21"><span class="ln">21   </span></a><span class="s0">export class </span>AppRoutingModule { }
-<a name="l22"><span class="ln">22   </span></a></pre>
+<a name="l15"><span class="ln">15   </span></a>   {path: <span class="s2">'**'</span>,  redirectTo: <span class="s2">'/'</span>,
+<a name="l16"><span class="ln">16   </span></a>  },
+<a name="l17"><span class="ln">17   </span></a>];
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a>@NgModule({
+<a name="l20"><span class="ln">20   </span></a>  imports: [RouterModule.forRoot(routes)],
+<a name="l21"><span class="ln">21   </span></a>  exports: [RouterModule]
+<a name="l22"><span class="ln">22   </span></a>})
+<a name="l23"><span class="ln">23   </span></a><span class="s0">export class </span>AppRoutingModule { }
+<a name="l24"><span class="ln">24   </span></a></pre>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>app.component.spec.ts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+app.component.spec.ts</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">import </span>{ TestBed } from <span class="s2">'@angular/core/testing'</span>;
+<a name="l2"><span class="ln">2    </span></a><span class="s0">import </span>{ RouterTestingModule } from <span class="s2">'@angular/router/testing'</span>;
+<a name="l3"><span class="ln">3    </span></a><span class="s0">import </span>{ AppComponent } from <span class="s2">'./app.component'</span>;
+<a name="l4"><span class="ln">4    </span></a>
+<a name="l5"><span class="ln">5    </span></a>describe(<span class="s2">'AppComponent'</span>, () =&gt; {
+<a name="l6"><span class="ln">6    </span></a>  beforeEach(async () =&gt; {
+<a name="l7"><span class="ln">7    </span></a>    <span class="s0">await </span>TestBed.configureTestingModule({
+<a name="l8"><span class="ln">8    </span></a>      imports: [
+<a name="l9"><span class="ln">9    </span></a>        RouterTestingModule
+<a name="l10"><span class="ln">10   </span></a>      ],
+<a name="l11"><span class="ln">11   </span></a>      declarations: [
+<a name="l12"><span class="ln">12   </span></a>        AppComponent
+<a name="l13"><span class="ln">13   </span></a>      ],
+<a name="l14"><span class="ln">14   </span></a>    }).compileComponents();
+<a name="l15"><span class="ln">15   </span></a>  });
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a>  it(<span class="s2">'should create the app'</span>, () =&gt; {
+<a name="l18"><span class="ln">18   </span></a>    <span class="s0">const </span>fixture = TestBed.createComponent(AppComponent);
+<a name="l19"><span class="ln">19   </span></a>    <span class="s0">const </span>app = fixture.componentInstance;
+<a name="l20"><span class="ln">20   </span></a>    expect(app).toBeTruthy();
+<a name="l21"><span class="ln">21   </span></a>  });
+<a name="l22"><span class="ln">22   </span></a>
+<a name="l23"><span class="ln">23   </span></a>  it(<span class="s2">`should have as title 'A_AA_Uni_4_Bootstrap'`</span>, () =&gt; {
+<a name="l24"><span class="ln">24   </span></a>    <span class="s0">const </span>fixture = TestBed.createComponent(AppComponent);
+<a name="l25"><span class="ln">25   </span></a>    <span class="s0">const </span>app = fixture.componentInstance;
+<a name="l26"><span class="ln">26   </span></a>    expect(app.title).toEqual(<span class="s2">'A_AA_Uni_4_Bootstrap'</span>);
+<a name="l27"><span class="ln">27   </span></a>  });
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>  it(<span class="s2">'should render title'</span>, () =&gt; {
+<a name="l30"><span class="ln">30   </span></a>    <span class="s0">const </span>fixture = TestBed.createComponent(AppComponent);
+<a name="l31"><span class="ln">31   </span></a>    fixture.detectChanges();
+<a name="l32"><span class="ln">32   </span></a>    <span class="s0">const </span>compiled = fixture.nativeElement as HTMLElement;
+<a name="l33"><span class="ln">33   </span></a>    expect(compiled.querySelector(<span class="s2">'.content span'</span>)?.textContent).toContain(<span class="s2">'A_AA_Uni_4_Bootstrap app is running!'</span>);
+<a name="l34"><span class="ln">34   </span></a>  });
+<a name="l35"><span class="ln">35   </span></a>});
+<a name="l36"><span class="ln">36   </span></a></pre>
+</body>
+</html>

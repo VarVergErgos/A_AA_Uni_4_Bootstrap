@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>app.component.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000;}
+.s1 { color: #000080; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #000000;}
+.s4 { color: #0000ff; font-weight: bold;}
+.s5 { color: #008000; font-weight: bold;}
+.s6 { color: #660e7a; font-weight: bold;}
+.s7 { color: #808080; font-style: italic;}
+.s8 { color: #660e7a; font-weight: bold; font-style: italic;}
+.s9 { color: #008000; font-weight: bold;}
+.s10 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+app.component.html</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a>&lt;<span class="s1">h1</span>&gt;Reactive Form Validation with Regex&lt;/<span class="s1">h1</span>&gt;
+<a name="l2"><span class="ln">2    </span></a>&lt;<span class="s1">p</span>&gt;{{ loginForm.value | json }}&lt;/<span class="s1">p</span>&gt;
+<a name="l3"><span class="ln">3    </span></a>
+<a name="l4"><span class="ln">4    </span></a>&lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;container-sm&quot;</span>&gt;
+<a name="l5"><span class="ln">5    </span></a>  &lt;<span class="s1">form </span><span class="s6">[formGroup]</span><span class="s5">=&quot;</span>loginForm<span class="s5">&quot; </span><span class="s6">(ngSubmit)</span><span class="s5">=&quot;</span>save()<span class="s5">&quot;</span>&gt;
+<a name="l6"><span class="ln">6    </span></a>    &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;card-body&quot;</span>&gt;
+<a name="l7"><span class="ln">7    </span></a>      &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;row mb-4&quot;</span>&gt;
+<a name="l8"><span class="ln">8    </span></a>        &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;col-4 bg-light p-3 border&quot;</span>&gt;
+<a name="l9"><span class="ln">9    </span></a>          <span class="s7">&lt;!--Id--&gt;</span>
+<a name="l10"><span class="ln">10   </span></a>          &lt;<span class="s1">label </span><span class="s4">class</span><span class="s5">=&quot;form-label&quot;</span>&gt;email&lt;/<span class="s1">label</span>&gt;
+<a name="l11"><span class="ln">11   </span></a>          &lt;<span class="s1">input </span><span class="s4">type</span><span class="s5">=&quot;email&quot; </span><span class="s4">formControlName</span><span class="s5">=&quot;email&quot; </span><span class="s4">class</span><span class="s5">=&quot;form-control&quot; </span>/&gt;
+<a name="l12"><span class="ln">12   </span></a>          &lt;<span class="s1">ng-container </span>
+<a name="l13"><span class="ln">13   </span></a>              <span class="s8">*ngIf</span><span class="s5">=&quot; </span>loginForm.controls[<span class="s9">'email'</span>].dirty || loginForm.controls[<span class="s9">'email'</span>].touched<span class="s5">&quot;</span>&gt;
+<a name="l14"><span class="ln">14   </span></a>            &lt;<span class="s1">div</span>&gt;style=&quot;color: red&quot; font-size:10px class=&quot;error&quot; *ngIf=&quot;
+<a name="l15"><span class="ln">15   </span></a>              loginForm.controls['email'].errors&quot;&gt;Es muss eine gültige email angegeben werden&lt;/<span class="s1">div</span>&gt;
+<a name="l16"><span class="ln">16   </span></a>          &lt;/<span class="s1">ng-container</span>&gt;
+<a name="l17"><span class="ln">17   </span></a>        &lt;/<span class="s1">div</span>&gt;
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a>        &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;col-4 bg-light p-3 border&quot;</span>&gt;
+<a name="l20"><span class="ln">20   </span></a>          <span class="s7">&lt;!--RoomNumber--&gt;</span>
+<a name="l21"><span class="ln">21   </span></a>          &lt;<span class="s1">label </span><span class="s4">class</span><span class="s5">=&quot;form-label&quot;</span>&gt;Address&lt;/<span class="s1">label</span>&gt;
+<a name="l22"><span class="ln">22   </span></a>          &lt;<span class="s1">input </span><span class="s4">type</span><span class="s5">=&quot;text&quot; </span><span class="s4">formControlName</span><span class="s5">=&quot;address&quot; </span><span class="s4">class</span><span class="s5">=&quot;form-control&quot; </span>/&gt;
+<a name="l23"><span class="ln">23   </span></a>           &lt;<span class="s1">ng-container </span>
+<a name="l24"><span class="ln">24   </span></a>              <span class="s8">*ngIf</span><span class="s5">=&quot; </span>loginForm.controls[<span class="s9">'address'</span>].dirty ||loginForm.controls[<span class="s9">'address'</span>].touched<span class="s5">&quot;</span>&gt;
+<a name="l25"><span class="ln">25   </span></a>            &lt;<span class="s1">div</span>&gt; style=&quot;color: red&quot; font-size:10px  class=&quot;error&quot; *ngIf=&quot;
+<a name="l26"><span class="ln">26   </span></a>              loginForm.controls['address'].errors&quot;&gt;Zeichenlänge mindestens 10 maximal 40&lt;/<span class="s1">div</span>&gt;
+<a name="l27"><span class="ln">27   </span></a>          &lt;/<span class="s1">ng-container</span>&gt;
+<a name="l28"><span class="ln">28   </span></a>        &lt;/<span class="s1">div</span>&gt;
+<a name="l29"><span class="ln">29   </span></a>      &lt;/<span class="s1">div</span>&gt;
+<a name="l30"><span class="ln">30   </span></a> 
+<a name="l31"><span class="ln">31   </span></a>      &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;col-4 bg-light p-3 border&quot;</span>&gt;
+<a name="l32"><span class="ln">32   </span></a>        <span class="s7">&lt;!--RoomNumber--&gt;</span>
+<a name="l33"><span class="ln">33   </span></a>        &lt;<span class="s1">label </span><span class="s4">class</span><span class="s5">=&quot;form-label&quot;</span>&gt;PLZ&lt;/<span class="s1">label</span>&gt;
+<a name="l34"><span class="ln">34   </span></a>        &lt;<span class="s1">input </span><span class="s4">type</span><span class="s5">=&quot;text&quot; </span><span class="s4">formControlName</span><span class="s5">=&quot;plz&quot; </span><span class="s4">class</span><span class="s5">=&quot;form-control&quot;</span>
+<a name="l35"><span class="ln">35   </span></a>          <span class="s6">(keypress)</span><span class="s5">=&quot;</span>($event.charCode &gt;= <span class="s10">48 </span>&amp;&amp; $event.charCode &lt; <span class="s10">58</span>)<span class="s5">&quot; </span>/&gt;
+<a name="l36"><span class="ln">36   </span></a>          &lt;<span class="s1">ng-container </span><span class="s4">ng-container </span>
+<a name="l37"><span class="ln">37   </span></a>              <span class="s8">*ngIf</span><span class="s5">=&quot; </span>loginForm.controls[<span class="s9">'plz'</span>].dirty || loginForm.controls[<span class="s9">'plz'</span>].touched<span class="s5">&quot;</span>&gt;
+<a name="l38"><span class="ln">38   </span></a>             &lt;<span class="s1">div</span>&gt; style=&quot;color: red&quot; font-size:10px class=&quot;error&quot; *ngIf=&quot;
+<a name="l39"><span class="ln">39   </span></a>              loginForm.controls['address'].errors&quot;&gt;PLZ mindesten 5 Zeichen&lt;/<span class="s1">div</span>&gt;
+<a name="l40"><span class="ln">40   </span></a>          &lt;/<span class="s1">ng-container</span>&gt;
+<a name="l41"><span class="ln">41   </span></a>      &lt;/<span class="s1">div</span>&gt;
+<a name="l42"><span class="ln">42   </span></a>
+<a name="l43"><span class="ln">43   </span></a>      &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;col-4 bg-light p-3 border&quot;</span>&gt;
+<a name="l44"><span class="ln">44   </span></a>        <span class="s7">&lt;!--RoomNumber--&gt;</span>
+<a name="l45"><span class="ln">45   </span></a>        &lt;<span class="s1">label </span><span class="s4">class</span><span class="s5">=&quot;form-label&quot;</span>&gt;Amount&lt;/<span class="s1">label</span>&gt;
+<a name="l46"><span class="ln">46   </span></a>        &lt;<span class="s1">input </span><span class="s4">type</span><span class="s5">=&quot;number&quot; </span><span class="s4">step</span><span class="s5">=&quot;0.01&quot; </span><span class="s4">formControlName</span><span class="s5">=&quot;amount&quot; </span><span class="s4">class</span><span class="s5">=&quot;form-control&quot; </span>/&gt;
+<a name="l47"><span class="ln">47   </span></a>      &lt;<span class="s1">ng-container </span><span class="s4">ng-container </span>
+<a name="l48"><span class="ln">48   </span></a>              <span class="s8">*ngIf</span><span class="s5">=&quot; </span>loginForm.controls[<span class="s9">'amount'</span>].dirty ||loginForm.controls[<span class="s9">'amount'</span>].touched<span class="s5">&quot;</span>&gt;
+<a name="l49"><span class="ln">49   </span></a>             &lt;<span class="s1">div</span>&gt;style=&quot;color: red&quot; font-size:10px class=&quot;error&quot; *ngIf=&quot;
+<a name="l50"><span class="ln">50   </span></a>              loginForm.controls['amount'].errors&quot;&gt;PLZ mindesten 5 Zeichen&lt;/<span class="s1">div</span>&gt;
+<a name="l51"><span class="ln">51   </span></a>       &lt;/<span class="s1">ng-container</span>&gt;
+<a name="l52"><span class="ln">52   </span></a>      &lt;/<span class="s1">div</span>&gt;
+<a name="l53"><span class="ln">53   </span></a>    &lt;/<span class="s1">div</span>&gt;
+<a name="l54"><span class="ln">54   </span></a>
+<a name="l55"><span class="ln">55   </span></a>    &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;card-footer&quot;</span>&gt;
+<a name="l56"><span class="ln">56   </span></a>      &lt;<span class="s1">button </span><span class="s6">[disabled]</span><span class="s5">=&quot;</span>loginForm.invalid<span class="s5">&quot; </span><span class="s4">type</span><span class="s5">=&quot;submit&quot; </span><span class="s4">class</span><span class="s5">=&quot;btn btn-primary&quot;</span>&gt;
+<a name="l57"><span class="ln">57   </span></a>        Submit
+<a name="l58"><span class="ln">58   </span></a>      &lt;/<span class="s1">button</span>&gt;
+<a name="l59"><span class="ln">59   </span></a>    &lt;/<span class="s1">div</span>&gt;
+<a name="l60"><span class="ln">60   </span></a>  &lt;/<span class="s1">form</span>&gt;
+<a name="l61"><span class="ln">61   </span></a>&lt;/<span class="s1">div</span>&gt;
+<a name="l62"><span class="ln">62   </span></a>
+<a name="l63"><span class="ln">63   </span></a>&lt;<span class="s1">br</span>&gt;
+<a name="l64"><span class="ln">64   </span></a>
+<a name="l65"><span class="ln">65   </span></a>&lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;container&quot;</span>&gt;
+<a name="l66"><span class="ln">66   </span></a>&lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;row&quot; </span>&gt;
+<a name="l67"><span class="ln">67   </span></a>  &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;col-sm-6 mb-0 
+<a name="l68"><span class="ln">68   </span></a>  &quot;</span>&gt;
+<a name="l69"><span class="ln">69   </span></a>    &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;card text-bg-success mb-4&quot;</span>&gt;
+<a name="l70"><span class="ln">70   </span></a>      &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;card-body&quot;</span>&gt;
+<a name="l71"><span class="ln">71   </span></a>        &lt;<span class="s1">h5 </span><span class="s4">class</span><span class="s5">=&quot;card-title&quot;</span>&gt;Special title treatment&lt;/<span class="s1">h5</span>&gt;
+<a name="l72"><span class="ln">72   </span></a>        &lt;<span class="s1">p </span><span class="s4">class</span><span class="s5">=&quot;card-text&quot;</span>&gt;With supporting text below as a natural lead-in to additional content.&lt;/<span class="s1">p</span>&gt;
+<a name="l73"><span class="ln">73   </span></a>        &lt;<span class="s1">a </span><span class="s4">href</span><span class="s5">=&quot;#&quot; </span><span class="s4">class</span><span class="s5">=&quot;btn btn-primary&quot;</span>&gt;Go somewhere&lt;/<span class="s1">a</span>&gt;
+<a name="l74"><span class="ln">74   </span></a>      &lt;/<span class="s1">div</span>&gt;
+<a name="l75"><span class="ln">75   </span></a>    &lt;/<span class="s1">div</span>&gt;
+<a name="l76"><span class="ln">76   </span></a>  &lt;/<span class="s1">div</span>&gt;
+<a name="l77"><span class="ln">77   </span></a>  &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;col-sm-6  mb-1&quot;</span>&gt;
+<a name="l78"><span class="ln">78   </span></a>    &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;card text-bg-warning mb-4&quot;</span>&gt;
+<a name="l79"><span class="ln">79   </span></a>      &lt;<span class="s1">div </span><span class="s4">class</span><span class="s5">=&quot;card-body&quot;</span>&gt;
+<a name="l80"><span class="ln">80   </span></a>        &lt;<span class="s1">h5 </span><span class="s4">class</span><span class="s5">=&quot;card-title&quot;</span>&gt;Special title treatment&lt;/<span class="s1">h5</span>&gt;
+<a name="l81"><span class="ln">81   </span></a>        &lt;<span class="s1">p </span><span class="s4">class</span><span class="s5">=&quot;card-text&quot;</span>&gt;With supporting text below as a natural lead-in to additional content.&lt;/<span class="s1">p</span>&gt;
+<a name="l82"><span class="ln">82   </span></a>        &lt;<span class="s1">a </span><span class="s4">href</span><span class="s5">=&quot;#&quot; </span><span class="s4">class</span><span class="s5">=&quot;btn btn-primary&quot;</span>&gt;Go somewhere&lt;/<span class="s1">a</span>&gt;
+<a name="l83"><span class="ln">83   </span></a>      &lt;/<span class="s1">div</span>&gt;
+<a name="l84"><span class="ln">84   </span></a>    &lt;/<span class="s1">div</span>&gt;
+<a name="l85"><span class="ln">85   </span></a>  &lt;/<span class="s1">div</span>&gt;
+<a name="l86"><span class="ln">86   </span></a>&lt;/<span class="s1">div</span>&gt;
+<a name="l87"><span class="ln">87   </span></a>&lt;/<span class="s1">div</span>&gt;</pre>
+</body>
+</html>
