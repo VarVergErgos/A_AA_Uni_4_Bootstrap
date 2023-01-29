@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>list-student.component.ts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+.s3 { color: #808080; font-style: italic;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+list-student.component.ts</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">import </span>{ Component, OnInit } from <span class="s2">'@angular/core'</span>;
+<a name="l2"><span class="ln">2    </span></a><span class="s0">import </span>{ StudentsService } from <span class="s2">'../../students.service'</span>;
+<a name="l3"><span class="ln">3    </span></a>@Component({
+<a name="l4"><span class="ln">4    </span></a>  selector: <span class="s2">'app-list-student'</span>,
+<a name="l5"><span class="ln">5    </span></a>  templateUrl: <span class="s2">'./list-student.component.html'</span>,
+<a name="l6"><span class="ln">6    </span></a>  styleUrls: [<span class="s2">'./list-student.component.css'</span>],
+<a name="l7"><span class="ln">7    </span></a>})
+<a name="l8"><span class="ln">8    </span></a><span class="s0">export class </span>ListStudentComponent {
+<a name="l9"><span class="ln">9    </span></a>  constructor(<span class="s0">private </span>student: StudentsService) {}
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a>
+<a name="l12"><span class="ln">12   </span></a>  studentData :any =[];
+<a name="l13"><span class="ln">13   </span></a>  ngOnInit(): <span class="s0">void </span>{
+<a name="l14"><span class="ln">14   </span></a>    <span class="s0">this</span>.student.getAllStudents().subscribe((allData) =&gt; {
+<a name="l15"><span class="ln">15   </span></a>     <span class="s3">// console.log(allData);</span>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s0">this</span>.studentData = allData;   
+<a name="l17"><span class="ln">17   </span></a>    });
+<a name="l18"><span class="ln">18   </span></a>  }
+<a name="l19"><span class="ln">19   </span></a>}
+<a name="l20"><span class="ln">20   </span></a></pre>
+</body>
+</html>
