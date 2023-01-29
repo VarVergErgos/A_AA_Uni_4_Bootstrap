@@ -5,8 +5,28 @@
   
 ##  https://www.youtube.com/watch?v=p01Ydl62ObE&list=PLQcBFrxTul9IQFF7fJz7jgdRYJz1OCbll
 
+npm install -g @angular/cli
+
 ### Create the new project
+
+
 1.) D:/ng new A_AA_Uni_4_Bootstrap
+npm install -g json-server
+create a folder database. In this create a db.json
+
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+go into the database folder and start the call
+json-server --watch db.json
+
 
 
 
