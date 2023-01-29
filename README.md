@@ -15,7 +15,10 @@
     
 ## npm install -g json-server
 create a folder database. In this create a db.json
-see also in ## https://www.npmjs.com/package/json-server
+see also in 
+
+## https://www.npmjs.com/package/json-server
+
 {
   "posts": [
     { "id": 1, "title": "json-server", "author": "typicode" }
