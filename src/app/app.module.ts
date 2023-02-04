@@ -10,6 +10,7 @@ import { LoginStudentComponent } from './components/login-student/login-student.
 import { RegistrationComponent } from './components/registration/registration.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,9 @@ import { HttpClientModule} from '@angular/common/http';
   imports: [BrowserModule, 
         AppRoutingModule, 
         NgbModule, 
-        HttpClientModule],
+        HttpClientModule,
+        ReactiveFormsModule
+      ],
   providers: [],
   bootstrap: [AppComponent],
 })
