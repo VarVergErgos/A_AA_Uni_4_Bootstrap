@@ -15,10 +15,16 @@ export class AddStudentComponent implements OnInit {
     email: new FormControl(''),
   });
 
-  saveData(){
+  message: boolean = false;
+
+  removeMessage(){
+    this.message = false;
+  }
+
+  saveData() {
     //console.log(this.addStudent.value);
-    this.student.saveStudentData(this.addStudent.value).subscribe((result)=>{
-      console.log(result)
+    this.student.saveStudentData(this.addStudent.value).subscribe((result) => {
+      this.message = true;
       this.addStudent.reset();
     });
   }
