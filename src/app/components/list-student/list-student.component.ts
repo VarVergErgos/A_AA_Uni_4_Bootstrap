@@ -8,12 +8,20 @@ import { StudentsService } from '../../students.service';
 export class ListStudentComponent {
   constructor(private student: StudentsService) {}
 
+  studentData: any = [];
+  deleteStudent(student_id : any){
+    console.log(student_id);
+    this.student.deleteStudentById(student_id).subscribe((result)=>{
+     // console.log(result);
+     //Refresh the table
+     this.ngOnInit();
+    })
+  }
 
-  studentData :any =[];
   ngOnInit(): void {
     this.student.getAllStudents().subscribe((allData) => {
-     // console.log(allData);
-    this.studentData = allData;   
+      // console.log(allData);
+      this.studentData = allData;
     });
   }
 }
